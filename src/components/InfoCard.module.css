@@ -1,0 +1,51 @@
+.tab{
+    display: flex;
+}
+.card{
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+.img{
+    height: 150px;
+}
+
+.title{
+ color: rgb(185, 185, 185);
+ font-size: 2vw;
+ font-weight: 600;
+ letter-spacing: 2px;
+}
+
+.heading{
+  font-weight: 700;
+  font-size: 1vw;
+}
+
+.text{
+ color: rgb(103, 102, 102);
+ 
+}
+.body{
+    margin-left: 15px;
+}
+
+
+@media screen and (max-width:720px){
+    .tab{
+        flex-direction: column;
+    }
+
+    .title{
+        color: rgb(185, 185, 185);
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 2px;
+       }
+       
+       .heading{
+         font-weight: 700;
+         font-size: 16px;
+       }
+
+}

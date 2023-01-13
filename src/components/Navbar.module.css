@@ -1,0 +1,119 @@
+ /***    common styling     ***/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/****   navbar styling    ****/
+.navbar{
+    display: flex;
+    width: 99vw;
+    padding: 3rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.nav_icon{
+
+}
+
+.nav_list{
+  display: flex;
+  align-items: baseline;
+  gap: 5vw;
+}
+
+.nav_items{
+  color: rgb(87, 87, 87);
+  font-size: large;
+  transition: 300ms all ease;
+  cursor: pointer;
+}
+
+
+
+.nav_items:hover{
+  color: orange;
+}
+
+.nav_toggler div{
+
+  width: 2rem;
+  height: .15rem;
+  margin: .2rem;
+  background-color: rgb(14, 10, 10);
+  transition: 300ms all ease;
+
+}
+
+.nav_toggler{
+
+  cursor:pointer;
+  display: none;
+
+}
+
+.line1 .line2 .line3{
+
+  /* color: grey; */
+
+}
+
+
+@media  screen and (max-width:868px) {
+  .nav_toggler{
+
+      display: block;
+
+  }
+  .nav_list{
+
+      position: fixed;
+      padding-top: 90px;
+      top:0vh;
+      right: 0;
+      width: 100%;
+      height: 93vh;
+      background:rgb(255, 255, 255);
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: 300ms all ease;
+
+  }
+  li{
+    margin-top:10px;
+    margin-left: 15px;
+
+  }
+}
+
+/* Nav Active Class */
+
+.nav_active{
+
+  transform: translateX(50%);
+
+}
+
+/* Toggler Icon Animation */
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-4px,4px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-4px , -4px);
+}
